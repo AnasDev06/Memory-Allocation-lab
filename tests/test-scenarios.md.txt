@@ -1,0 +1,53 @@
+# Test Scenarios
+
+## 1. First Fit Allocation
+
+1. Reset memory.
+2. Allocate P1 with 150 KB using First Fit.
+3. Allocate P2 with 300 KB using First Fit.
+4. Display memory layout.
+5. Verify that allocations start from the first suitable free block.
+
+## 2. Best Fit Allocation
+
+1. Create multiple free blocks with different sizes.
+2. Allocate a process using Best Fit.
+3. Verify that the smallest suitable free block is selected.
+
+## 3. Worst Fit Allocation
+
+1. Create multiple free blocks.
+2. Allocate a process using Worst Fit.
+3. Verify that the largest suitable free block is selected.
+
+## 4. Deallocation
+
+1. Allocate multiple processes.
+2. Deallocate one process.
+3. Display memory layout.
+4. Verify that the released block becomes free.
+
+## 5. Block Merging
+
+1. Allocate multiple adjacent processes.
+2. Deallocate adjacent processes.
+3. Verify that neighboring free blocks are merged.
+
+## 6. Memory Compaction
+
+1. Allocate multiple processes.
+2. Deallocate one or more processes to create fragmented free space.
+3. Run memory compaction.
+4. Verify that allocated blocks are moved together.
+5. Verify that remaining free memory becomes one contiguous block.
+
+## 7. Statistics
+
+Verify:
+
+- Total memory
+- Used memory
+- Free memory
+- Largest free block
+- Memory utilization
+- External fragmentation
