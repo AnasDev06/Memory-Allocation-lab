@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="MemoryAllocationLab.vcxproj" />
+  <Project Path="MemoryAllocationLab.vcxproj" Id="b51963c1-fb5e-48a9-b698-4cdedfda22f1" />
 </Solution>
